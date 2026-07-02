@@ -1,37 +1,90 @@
-from ollama import chat
+import streamlit as st
+from difflib import get_close_matches
 
-with open("profile.md", "r") as f:
-    profile = f.read()
+st.set_page_config(
+    page_title="Dhananjay AI",
+    page_icon="🤖",
+    layout="wide"
+)
 
-SYSTEM_PROMPT = f"""
-You are Dhananjay Kale's personal AI assistant.
+# Custom CSS
+st.markdown("""
+<style>
+.main {
+    background-color: #0b0f19;
+}
 
-Use the following information:
+.stChatMessage {
+    border-radius: 18px;
+    padding: 12px;
+}
 
-{profile}
+.user-msg {
+    background: #1f2937;
+    color: white;
+    padding: 12px;
+    border-radius: 16px;
+    margin: 8px 0;
+}
 
-Answer naturally.
-If information is unavailable, say:
-'I don't know that yet.'
-"""
+.bot-msg {
+    background: linear-gradient(90deg,#4f46e5,#7c3aed);
+    color: white;
+    padding: 12px;
+    border-radius: 16px;
+    margin: 8px 0;
+}
+</style>
+""", unsafe_allow_html=True)
 
-print("🤖 Personal AI Assistant")
-print("Type 'exit' to quit.\n")
+knowledge = {
+    "who is dhananjay":
+        "Dhananjay Kale is a Cloud DevOps Engineer at Henkel dx with 4.5 years of experience in Azure, GCP, Kubernetes, Terraform, and DevOps automation.",
 
-while True:
-    q = input("You: ")
+    "who is Nanjaiyan":
+        "He is best brother of Dhananjay kale and soul mate of him lovely friend who add valaue in his every phase of life !!.",
 
-    if q.lower() == "exit":
-        break
+    "azure":
+        "Dhananjay works extensively with Azure Landing Zones, AKS, ACR, Private Endpoints, Backup, Monitoring, and Infrastructure Automation.",
 
-    response = chat(
-        model="llama3.2",
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": q},
-        ],
+    "skills":
+        "Azure, GCP, Kubernetes, Docker, Terraform, Python, Bash, PowerShell, GitLab CI/CD, Prometheus, Grafana.",
+
+    "experience":
+        "Dhananjay has around 4.5 years of Cloud DevOps experience.",
+
+    "projects":
+        "Cloud Portal Automation, Backup Automation, IOC AI Assistant, Hostname Generator, and AI-powered internal tools."
+}
+
+st.title("🤖 Dhananjay AI")
+st.caption("Your personal AI assistant")
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
+
+question = st.chat_input("Ask me anything about Dhananjay...")
+
+if question:
+
+    st.session_state.messages.append(
+        {"role": "user", "content": question}
     )
 
-    print("\nAssistant:")
-    print(response["message"]["content"])
-    print()
+    q = question.lower()
+
+    if q in knowledge:
+        answer = knowledge[q]
+    else:
+        match = get_close_matches(q, knowledge.keys(), n=1)
+        answer = knowledge[match[0]] if match else "I don't know that yet."
+
+    st.session_state.messages.append(
+        {"role": "assistant", "content": answer}
+    )
+
+    st.rerun()
