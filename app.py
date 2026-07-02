@@ -58,7 +58,7 @@ section[data-testid="stSidebar"]{
 # ---------- SIDEBAR ----------
 with st.sidebar:
 
-    st.title("✨ DhanAI")
+    st.title("✨ Dhananjay AI")
 
     if st.button("➕ New Chat", use_container_width=True):
         st.session_state.messages = []
