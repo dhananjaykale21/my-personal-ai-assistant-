@@ -3,7 +3,7 @@ from difflib import get_close_matches
 from knowledge import knowledge
 
 st.set_page_config(
-    page_title="DhanAI",
+    page_title="Dhananjay AI",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="expanded"
