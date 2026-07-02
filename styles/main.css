@@ -1,0 +1,18 @@
+.stApp {
+    background: radial-gradient(
+        circle at center,
+        #101a40 0%,
+        #050816 70%
+    );
+    color: white;
+}
+
+.sidebar {
+    background: rgba(18,18,25,0.8);
+    backdrop-filter: blur(20px);
+}
+
+.chat-input {
+    border-radius: 40px;
+    backdrop-filter: blur(25px);
+}
