@@ -5,20 +5,35 @@ knowledge = {
     # =====================
 
     "name": "Dhananjay Kale",
-    "dob": "4 January 2000",
+    "nickname": "Dhananjay",
+    "assistant_name": "Dhananjay AI",
+    "dob": "2000-01-04",
     "location": "Pune, Maharashtra, India",
-    "languages": ["English", "Hindi", "Marathi"],
+    "timezone": "Asia/Kolkata",
 
-    "who is dhananjay":
-        """
-        Dhananjay Kale is a Cloud DevOps and Machine Learning Engineer with
-        5+ years of experience working across Azure, GCP, AWS, Kubernetes,
-        Terraform, DevOps automation, and Generative AI solutions.
-        He currently works at Henkel Adhesive Technology India Pvt. Ltd.
-        and specializes in enterprise cloud operations, infrastructure
-        automation, monitoring, AI experimentation environments, and
-        CI/CD pipelines.
-        """,  # Based on resume :contentReference[oaicite:0]{index=0}
+    "languages": [
+        "English",
+        "Hindi",
+        "Marathi"
+    ],
+
+    # =====================
+    # GREETING SETTINGS
+    # =====================
+
+    "greetings": {
+        "morning":
+            "Good morning Dhananjay! ☀️ Ready to build something amazing today?",
+
+        "afternoon":
+            "Good afternoon Dhananjay! 🚀 How can I help you today?",
+
+        "evening":
+            "Good evening Dhananjay! 🌙 Hope your day went well.",
+
+        "night":
+            "Good night Dhananjay! 🌟 Still working on cloud and AI projects?"
+    },
 
     # =====================
     # PERSONALITY
@@ -26,25 +41,23 @@ knowledge = {
 
     "personality":
         """
-        Hardworking, family-oriented, ambitious, curious,
-        supportive, and passionate about continuous learning.
-        Loves solving problems through automation and technology.
-        """,
+        Hardworking, ambitious, family-oriented,
+        supportive, curious, and deeply passionate
+        about technology and automation.
+        """
+    ,
 
     # =====================
-    # HOBBIES
+    # ABOUT ME
     # =====================
 
-    "hobbies": [
-        "Listening to songs",
-        "Watching and playing cricket",
-        "Learning cloud technologies",
-        "Building AI assistants",
-        "Python automation",
-        "Practicing Kubernetes",
-        "Exploring Generative AI",
-        "Reading technical blogs"
-    ],  # Resume + previous chats :contentReference[oaicite:1]{index=1}
+    "bio":
+        """
+        Dhananjay Kale is a Cloud DevOps Engineer
+        passionate about Kubernetes, Terraform,
+        Python, Generative AI, and enterprise automation.
+        """
+    ,
 
     # =====================
     # EDUCATION
@@ -52,189 +65,134 @@ knowledge = {
 
     "education": {
         "degree":
-            "Diploma in Electronics and Telecommunication (E&TC)",
+            "Diploma in Electronics and Telecommunication",
+
         "college":
             "Vishweshwarrya Padvika Abhiyantriki Mahavidyalaya, Latur",
+
         "graduation_year":
             2020
-    },  # :contentReference[oaicite:2]{index=2}
+    },
 
     # =====================
-    # PROFESSIONAL EXPERIENCE
+    # EXPERIENCE
     # =====================
 
     "experience_years": "5+",
 
+    "current_role":
+        "Cloud DevOps Engineer",
+
     "current_company":
         "Henkel Adhesive Technology India Pvt. Ltd.",
 
-    "current_role":
-        "Cloud DevOps Engineer (July 2024 - Present)",
+    "previous_companies": [
+        "Infosys"
+    ],
 
-    "previous_roles": [
-        {
-            "role": "Cloud Infrastructure Engineer",
-            "company": "Henkel",
-            "duration": "Oct 2023 - Jul 2024"
-        },
-        {
-            "role": "Senior System Associate",
-            "company": "Infosys",
-            "duration": "Dec 2020 - Oct 2023"
-        }
-    ],  # :contentReference[oaicite:3]{index=3}
+    # =====================
+    # HOBBIES
+    # =====================
+
+    "hobbies": [
+        "Listening to music",
+        "Watching cricket",
+        "Playing cricket",
+        "Learning cloud technologies",
+        "Building AI assistants",
+        "Reading technical blogs",
+        "Python automation",
+        "Kubernetes practice"
+    ],
+
+    # =====================
+    # FAVORITES
+    # =====================
+
+    "favorites": {
+
+        "cloud":
+            "Azure",
+
+        "programming_language":
+            "Python",
+
+        "container_platform":
+            "Kubernetes",
+
+        "iac_tool":
+            "Terraform",
+
+        "ui_framework":
+            "Streamlit",
+
+        "ai_platform":
+            "Google Gemini"
+    },
 
     # =====================
     # SKILLS
     # =====================
 
     "skills": [
+
         "Azure",
-        "Google Cloud Platform",
         "AWS",
+        "GCP",
+        "Terraform",
         "Kubernetes",
         "Docker",
-        "Terraform",
         "Python",
-        "Bash",
+        "Linux",
         "PowerShell",
-        "Linux Administration",
         "GitLab",
         "GitHub",
-        "Bitbucket",
-        "Jenkins",
         "CI/CD",
-        "Ansible",
         "Prometheus",
         "Grafana",
-        "Networking",
-        "Generative AI"
-    ],  # :contentReference[oaicite:4]{index=4}
+        "Ansible"
+    ],
 
     # =====================
     # CERTIFICATIONS
     # =====================
 
     "certifications": [
-        "Microsoft Azure Fundamentals (AZ-900)",
-        "Google Cloud Associate Cloud Engineer",
-        "Google Cloud Professional Cloud Architect",
-        "Infosys Certified Kanban Practitioner",
-        "Google Digital Transformation with Cloud"
-    ],  # :contentReference[oaicite:5]{index=5}
 
-    # =====================
-    # DAILY WORK
-    # =====================
-
-    "responsibilities": [
-        "Terraform infrastructure provisioning",
-        "Azure and GCP cloud operations",
-        "AKS and GKE administration",
-        "CI/CD pipeline management",
-        "Backup and disaster recovery",
-        "Monitoring and observability",
-        "Python automation",
-        "Incident handling",
-        "ServiceNow operations",
-        "Cloud security and access management"
+        "AZ-900",
+        "Google Associate Cloud Engineer",
+        "Google Professional Cloud Architect",
+        "Infosys Kanban Practitioner"
     ],
 
     # =====================
-    # AI & ML INTERESTS
+    # AI INTERESTS
     # =====================
 
     "ai_interests": [
+
         "Generative AI",
-        "Google Gemini",
-        "Vertex AI",
-        "AI Agents",
-        "RAG systems",
-        "Personal AI assistants",
         "LLMs",
-        "Machine Learning infrastructure",
-        "Experiment tracking",
-        "Model deployment pipelines"
+        "RAG",
+        "Vertex AI",
+        "Gemini",
+        "AI Agents",
+        "Personal Assistants"
     ],
 
     # =====================
-    # PERSONAL PROJECTS
+    # PROJECTS
     # =====================
 
     "projects": [
-        "Henkel IOC AI Assistant",
+
         "Personal AI Assistant",
-        "Streamlit Hostname Generator",
+        "Henkel IOC AI Assistant",
+        "Hostname Generator",
         "Cloud Portal Automation",
         "Azure Diagnostics Automation",
-        "Backup Reporting Automation",
-        "Kubernetes Learning Lab",
-        "RAG-based Chatbots"
+        "Backup Reporting Automation"
     ],
-
-    # =====================
-    # FREQUENT CHATGPT SEARCHES
-    # =====================
-
-    "frequent_searches": [
-
-        # Cloud
-        "Azure troubleshooting",
-        "AKS private DNS issues",
-        "Backup failures",
-        "Terraform modules",
-        "Azure Policy errors",
-        "ACR private endpoints",
-        "Kubernetes practice",
-        "Minikube and Kind",
-
-        # DevOps
-        "GitLab CI/CD",
-        "Docker automation",
-        "Prometheus and Grafana",
-        "Python scripting",
-        "PowerShell automation",
-
-        # AI
-        "Gemini",
-        "Vertex AI",
-        "Google AI Studio",
-        "RAG architecture",
-        "AI assistants",
-        "Agentic AI",
-
-        # Career
-        "Interview preparation",
-        "SQL questions",
-        "Python interview problems",
-        "Cloud engineer roles",
-
-        # Personal
-        "Home loan calculations",
-        "Tax slabs",
-        "Marriage planning",
-        "Investment discussions"
-    ],
-
-    # =====================
-    # IMPORTANT PEOPLE
-    # =====================
-
-    "important_people": {
-
-        "nanjaiyan":
-            """
-            Nanjaiyan is a very close friend and brother-like companion
-            who supported Dhananjay throughout difficult phases of life.
-            """
-    },
-    {
-        "who is Shivaknya":
-            """
-            She is cloest frined of Dhananjay.
-            """
-    },
-    
 
     # =====================
     # GOALS
@@ -245,25 +203,58 @@ knowledge = {
         "Become a Senior Cloud Architect",
         "Master Kubernetes",
         "Learn Platform Engineering",
-        "Build enterprise AI solutions",
-        "Create personal AI products",
-        "Automate cloud operations",
+        "Build enterprise AI products",
         "Own a dream house",
         "Support family financially"
     ],
 
     # =====================
-    # FAVORITE TECHNOLOGIES
+    # DAILY ROUTINE
     # =====================
 
-    "favorite_technologies": [
-        "Azure",
-        "Terraform",
-        "Kubernetes",
-        "Python",
-        "Streamlit",
-        "GitLab",
-        "Google Gemini",
-        "Vertex AI"
-    ]
+    "routine": {
+
+        "wake_up":
+            "6:00 AM",
+
+        "exercise":
+            "Morning walk and yoga",
+
+        "work":
+            "Cloud DevOps operations and automation",
+
+        "learning":
+            "Cloud, Kubernetes, AI, Python"
+    },
+
+    # =====================
+    # IMPORTANT PEOPLE
+    # =====================
+
+    "important_people": {
+
+        "nanjaiyan":
+            "A brother-like friend who supported Dhananjay during difficult times."
+    },
+
+    # =====================
+    # ASSISTANT SETTINGS
+    # =====================
+
+    "assistant_preferences": {
+
+        "always_use_name": True,
+
+        "default_language":
+            "English",
+
+        "response_style":
+            "friendly, natural, professional",
+
+        "emoji_usage":
+            True,
+
+        "greet_on_start":
+            True
+    }
 }
