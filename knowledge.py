@@ -228,6 +228,13 @@ knowledge = {
             who supported Dhananjay throughout difficult phases of life.
             """
     },
+    {
+        "who is Shivaknya":
+            """
+            She is cloest frined of Dhananjay.
+            """
+    },
+    
 
     # =====================
     # GOALS
